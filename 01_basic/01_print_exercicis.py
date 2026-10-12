@@ -5,7 +5,7 @@
 
 # Exercici 1
 # Imprimeix el teu nom i cognom a la consola
-print("El meu nom es Izan Delgado")
+print("Izan Delgado")
 
 # Exercici 2
 # Imprimeix les paraules "Python", "és", "divertit" separades per un guió (-)
