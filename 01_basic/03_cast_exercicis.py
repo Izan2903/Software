@@ -9,6 +9,7 @@
 paquets_rebuts = input("Quants paquets ha rebut l'encaminador? ")
 total_paquets = int(paquets_rebuts) + 1200
 print(f"Total de paquets: {total_paquets}")
+
 # Exercici 2
 # Demana a l'usuari la velocitat d'una connexió en Mbps. Converteix el valor
 # introduït a un nombre decimal i calcula la velocitat equivalent en MB/s
