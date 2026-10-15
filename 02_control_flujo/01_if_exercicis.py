@@ -69,7 +69,16 @@ else:
 # (del 20 % al 49 %) o suficient (50 % o més). Rebutja valors fora del rang
 # del 0 % al 100 %.
 
+percentatge = float(input("Introdueix el percentatge de bateria disponible: "))
 
+if percentatge >= 0 and percentatge < 20:
+    print("Nivell crític")
+elif percentatge >= 20 and percentatge < 50:
+    print("Nivell baix")
+elif percentatge >= 50 and percentatge <= 100:
+    print("Nivell suficient")
+else:
+    print("Error! Percentatge de bateria incorrecte")
 
 # Exercici 6: Qualitat d'una connexió de xarxa
 # Demana la latència en mil·lisegons i el percentatge de paquets perduts.
@@ -79,12 +88,29 @@ else:
 # del 3 % o menys; acceptable si és de 150 ms o menys i la pèrdua és del 5 %
 # o menys; en qualsevol altre cas, deficient.
 
+latencia = float(input("Introdueix la latència en mil·lisegons: "))
+percentatge = float(input("Introdueix el percentatge de paquets perduts: "))
+
+if percentatge >= 0 and percentatge <= 100:
+    if latencia <= 30 and percentatge <= 1:
+        print("Connexió excel·lent")
+    elif latencia <= 80 and percentatge <= 3:
+        print("Connexió bona")
+    elif latencia <= 150 and percentatge <= 5:
+        print("Connexió acceptable")
+    else:
+        print("Connexió deficient")
+else:
+    print("Latencia rebutjada")
+
 # Exercici 7: Cost mensual d'un pla de dades
 # Demana el tipus de pla (bàsic o plus) i el consum mensual en GB.
 # El pla bàsic costa 10 € i inclou 10 GB; cada GB addicional costa 1,50 €.
 # El pla plus costa 20 € i inclou 30 GB; cada GB addicional costa 0,75 €.
 # Rebutja un consum negatiu o un tipus de pla desconegut. Calcula i mostra el
 # cost total, tenint en compte que no es cobra l'excés si no se supera el límit.
+
+
 
 # Exercici 8: Accés a un compte de client
 # Demana si el compte està actiu, si la contrasenya és correcta i si el codi
@@ -93,6 +119,8 @@ else:
 # està desactivat, perquè la contrasenya és incorrecta o perquè falla el codi;
 # si totes les comprovacions necessàries són correctes, permet l'accés.
 
+
+
 # Exercici 9: Diagnòstic d'un router
 # Demana si el router està encès, si l'indicador LOS del terminal òptic està
 # encès i si l'indicador d'Internet del router està encès. Indica primer si
@@ -100,9 +128,12 @@ else:
 # de fibra (LOS encès), si cal contactar amb el proveïdor (Internet apagat) o
 # si la connexió funciona correctament. Considera els casos en aquest ordre.
 
+
+
 # Exercici 10: Prioritat d'una incidència de xarxa
 # Demana si la incidència afecta un servei crític, el nombre d'usuaris afectats
 # i si hi ha una alternativa de connexió disponible. Rebutja un nombre negatiu
 # d'usuaris. Assigna prioritat crítica si afecta un servei crític i no hi ha
 # alternativa, o si afecta almenys 50 usuaris i no hi ha alternativa; alta si
 # afecta almenys 10 usuaris o un servei crític; en qualsevol altre cas, baixa.
+
