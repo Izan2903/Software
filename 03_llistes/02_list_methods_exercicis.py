@@ -3,7 +3,7 @@
 # Fes servir, sempre que puguis, els mètodes que has après.
 ###
 
-print("Exercici 1: Afegir i modificar elements")
+print("\nExercici 1: Afegir i modificar elements")
 # Crea una llista amb els nombres de l'1 al 5.
 # Afegeix-hi el nombre 6 al final fent servir append().
 # Insereix-hi el nombre 10 a la posició 2 fent servir insert().
@@ -16,7 +16,7 @@ llista1[0] = 0
 
 print(llista1)
 
-print("Exercici 2: Combinar i buidar llistes")
+print("\nExercici 2: Combinar i buidar llistes")
 # Crea dues llistes:
 # llista_a = [1, 2, 3]
 # llista_b = [4, 5, 6, 1, 2]
@@ -37,7 +37,7 @@ llista_b.clear()
 print(f"Llista A: {llista_a}")
 print(f"Llista B: {llista_b}")
 
-print("Exercici 3: Slicing i eliminació amb del")
+print("\nExercici 3: Slicing i eliminació amb del")
 # Crea una llista amb els nombres de l'1 al 10.
 # Fes servir slicing i del per eliminar els elements des de l'índex 2 fins al 5
 # (sense incloure el 5).
@@ -49,7 +49,7 @@ del llista [2:5]
 
 print(f"Llista després del slicing: {llista}")
 
-print("Exercici 4: Ordenar i comptar")
+print("\nExercici 4: Ordenar i comptar")
 # Crea una llista amb els nombres següents: [5, 2, 8, 1, 9, 4, 2].
 # Ordena la llista de manera ascendent fent servir sort().
 # Compta quantes vegades apareix el nombre 2 a la llista fent servir count().
@@ -61,7 +61,7 @@ print(f"Llista ordenada: {llista1}")
 print(f"Quantes vegades apareix el nombre 2? {llista1.count(2)} vegades")
 print("Apareix el número 7? ",7 in llista1)
 
-print("Exercici 5: Còpia i referència")
+print("\nExercici 5: Còpia i referència")
 # Crea una llista anomenada original amb els nombres [1, 2, 3].
 # Crea'n una còpia anomenada copia_1 fent servir slicing.
 # Crea'n una altra còpia anomenada copia_2 fent servir copy().
@@ -79,7 +79,7 @@ print(copia_1)
 print(copia_2)
 print(referencia)
 
-print("Exercici 6: Ordenar cadenes sense distingir entre majúscules i minúscules")
+print("\nExercici 6: Ordenar cadenes sense distingir entre majúscules i minúscules")
 # Crea una llista amb les cadenes següents: ["Poma", "pera", "PLÀTAN", "taronja"].
 # Ordena la llista sense distingir entre majúscules i minúscules.
 
