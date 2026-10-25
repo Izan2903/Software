@@ -88,21 +88,47 @@ print("\nExercici 7: Suma fins al zero")
 # Ves sumant els números introduïts fins que l'usuari introdueixi el 0.
 # Al final, imprimeix la suma total. El 0 només serveix per acabar i no s'ha de sumar.
 
+num = int(input("Introdueix un número enter: "))
+suma = 0
 
+while num != 0:
+    suma += num
+    num = int(input("Introdueix un altre número enter: "))
+
+print(f"La suma de tots els números ha sigut {suma}")
 
 print("\nExercici 8: Comptar les xifres d'un número")
 # Demana a l'usuari que introdueixi un número enter positiu.
 # Comptabilitza quantes xifres té fent servir un bucle while.
 # Finalment, imprimeix el nombre de xifres.
 
+num = int(input("Introdueix un nombre enter positiu: "))
+num1 = num
+comptador = 0
 
+while num > 1:
+    comptador += 1
+    num = num / 10
+
+print(f"El número {num1} té {comptador} xifres")
 
 print("\nExercici 9: Seqüència de Fibonacci")
 # Demana a l'usuari quants termes de la seqüència de Fibonacci vol veure.
 # Imprimeix aquest nombre de termes fent servir un bucle while.
 # La seqüència comença per 0 i 1; cada terme següent és la suma dels dos anteriors.
 
+termes = int(input("Quants termes de la seqüència de Fibonacci vols veure? "))
+comptador = 0
 
+anterior = 0
+actual = 1
+
+while termes > comptador:
+    print(anterior)
+    seguent = anterior + actual
+    anterior = actual
+    actual = seguent
+    comptador += 1
 
 print("\nExercici 10: Joc d'endevinar el número")
 # El número secret és el 7.
@@ -110,3 +136,16 @@ print("\nExercici 10: Joc d'endevinar el número")
 # fins que l'encerti.
 # Després de cada intent incorrecte, indica si el número secret és més gran o més petit.
 
+num = 7
+
+num_prova = int(input("Quin serà el número secret? Prova: "))
+
+while num_prova != num:
+    if num_prova > num:
+        print("El número secret es més petit")
+        num_prova = int(input("Quin serà el número secret? Prova: "))
+    else:
+        print("El número secret es més gran")
+        num_prova = int(input("Quin serà el número secret? Prova: "))
+else:
+    print(f"Has acertat!!!")
