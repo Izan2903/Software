@@ -18,7 +18,14 @@ for c in num:
 # numeros = [10, 20, 30, 40, 50]
 # Calcula la mitjana dels números fent servir un bucle for.
 
+numeros = [10, 20, 30, 40, 50]
 
+suma = 0
+
+for c in numeros:
+    suma += c
+
+print(f"Suma total: {suma}")
 
 # Exercici 3: Buscar el màxim d'una llista
 # Donada la llista de números següent:
