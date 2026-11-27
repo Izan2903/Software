@@ -101,7 +101,7 @@ v = 12
 
 for c in resistencies:
     i = v/c
-    print(f"En la resistencia de {c} ohms hi pasen %.4f A", i)
+    print(f"En la resistencia de {c} ohms hi pasen {i} A")
 
 print("Exercici 8: Mostres que superen el llindar de soroll")
 # Un receptor ha mesurat aquests nivells de soroll (en dBm):
@@ -110,6 +110,14 @@ print("Exercici 8: Mostres que superen el llindar de soroll")
 # (és a dir, tenen un valor més gran que -80) i imprimeix el resultat.
 
 nivells_soroll = [-92, -85, -78, -95, -81, -88]
+llindar_max = -80
+comptador = 0
+
+for c in nivells_soroll:
+    if c > llindar_max:
+        comptador += 1
+
+print(f"Hi han {comptador} nivell de soroll que superen el llindar")
 
 print("Exercici 9: Càlcul de la taxa d'error de bits")
 # Compara els bits transmesos i rebuts:
@@ -120,6 +128,8 @@ print("Exercici 9: Càlcul de la taxa d'error de bits")
 
 bits_transmesos = [1, 0, 1, 1, 0, 0, 1, 0]
 bits_rebuts =     [1, 0, 0, 1, 0, 1, 1, 0]
+
+for c in range()
 
 print("Exercici 10: Període d'un senyal")
 # Donades les freqüències següents, en hertzs:
